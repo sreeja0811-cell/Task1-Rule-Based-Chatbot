@@ -1,41 +1,107 @@
-print("=" * 40)
-print("🤖 AI Rule-Based Chatbot")
-print("Type 'bye' to exit")
-print("=" * 40)
+import datetime
+
+user_name = ""
+question_count = 0
+
+print("="*60)
+print("🤖 SMART AI ASSISTANT CHATBOT")
+print("="*60)
+
+user_name = input("👤 Enter your name: ")
+
+print(f"\n🤖 Hello {user_name}! Welcome to the AI Assistant.")
+print("Type 'help' for available commands.")
+print("Type 'bye' to exit.")
 
 while True:
-    user = input("\nYou: ").lower()
 
-    if user in ["hello", "hi", "hey"]:
-        print("Bot: Hello! How can I assist you today?")
+    user = input(f"\n{user_name}: ").lower().strip()
+    question_count += 1
 
+    # Greetings
+    if user in ["hello","hi","hey"]:
+        print(f"🤖 Hello {user_name}! How can I help you today?")
+
+    # About chatbot
     elif "name" in user:
-        print("Bot: My name is AI Chatbot.")
+        print("🤖 I am Smart AI Assistant Chatbot.")
 
-    elif "healthcare" in user:
-        print("Bot: AI can help healthcare professionals make better decisions and improve patient care.")
-
-    elif "how are you" in user:
-        print("Bot: I am doing great. Thanks for asking!")
-
-    elif "python" in user:
-        print("Bot: Python is a popular language used for AI, Machine Learning, and Web Development.")
-
+    # AI
     elif "ai" in user:
-        print("Bot: Artificial Intelligence enables machines to simulate human intelligence.")
+        print("🤖 Artificial Intelligence enables machines to simulate human intelligence.")
 
+    # Machine Learning
     elif "machine learning" in user:
-        print("Bot: Machine Learning is a branch of AI that learns patterns from data.")
+        print("🤖 Machine Learning is a subset of AI that learns patterns from data.")
 
+    # Python
+    elif "python" in user:
+        print("🤖 Python is widely used in AI, Machine Learning, Data Science and Web Development.")
+
+    # React
     elif "react" in user:
-        print("Bot: React is a JavaScript library used for building user interfaces.")
+        print("🤖 React is a JavaScript library used for building modern user interfaces.")
 
-    elif "thank you" in user or "thanks" in user:
-        print("Bot: You're welcome!")
+    # Healthcare
+    elif "healthcare" in user:
+        print("🤖 AI in healthcare helps doctors with diagnosis, decision support and patient care.")
 
-    elif "bye" in user:
-        print("Bot: Goodbye! Have a great day.")
+    # Time
+    elif "time" in user:
+        current_time = datetime.datetime.now().strftime("%I:%M:%S %p")
+        print(f"🤖 Current Time: {current_time}")
+
+    # Date
+    elif "date" in user:
+        current_date = datetime.datetime.now().strftime("%d-%m-%Y")
+        print(f"🤖 Today's Date: {current_date}")
+
+    # Calculator
+    elif user.startswith("calc"):
+
+        try:
+            expression = user.replace("calc","")
+            result = eval(expression)
+            print(f"🤖 Result = {result}")
+        except:
+            print("🤖 Invalid Expression")
+
+    # Positive sentiment
+    elif any(word in user for word in ["good","great","awesome","happy"]):
+        print("🤖 That's wonderful to hear! 😊")
+
+    # Negative sentiment
+    elif any(word in user for word in ["sad","bad","upset","angry"]):
+        print("🤖 I'm sorry to hear that. Hope things improve soon. ❤️")
+
+    # Statistics
+    elif "stats" in user:
+        print(f"🤖 Total Questions Asked: {question_count}")
+
+    # Help Menu
+    elif "help" in user:
+
+        print("\n📋 AVAILABLE COMMANDS")
+        print("- hello")
+        print("- what is ai")
+        print("- what is machine learning")
+        print("- what is python")
+        print("- what is react")
+        print("- healthcare")
+        print("- date")
+        print("- time")
+        print("- calc 5+10")
+        print("- stats")
+        print("- bye")
+
+    # Thanks
+    elif "thank" in user:
+        print("🤖 You're welcome!")
+
+    # Exit
+    elif user == "bye":
+        print(f"🤖 Goodbye {user_name}! Have a great day.")
         break
 
     else:
-        print("Bot: Sorry, I don't understand that question.")
+        print("🤖 Sorry, I don't understand. Type 'help' for commands.")
