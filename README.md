@@ -1,37 +1,40 @@
-Use this as your `README.md` for Task 1:
-
 # 🤖 Smart AI Assistant Chatbot
 
 ## 📌 Project Overview
 
-Smart AI Assistant Chatbot is a rule-based conversational chatbot developed using Python. The chatbot interacts with users through predefined rules and pattern matching techniques, providing responses to various queries related to Artificial Intelligence, Machine Learning, Python, React, Healthcare, and more.
+Smart AI Assistant Chatbot is a rule-based conversational chatbot developed using Python. The chatbot interacts with users through predefined rules and pattern matching techniques to provide intelligent responses to various queries.
+
+The application is capable of answering questions related to Artificial Intelligence, Machine Learning, Python, React, and Healthcare while also offering utility features such as date and time retrieval, basic calculations, sentiment-aware responses, and conversation statistics tracking.
 
 This project was developed as part of the **Artificial Intelligence Internship Program at MyDailyWork**.
 
 ---
 
-## 🚀 Features
+## 🌟 Features
 
-* Personalized user greetings
-* AI and Machine Learning information
-* Python and React knowledge responses
-* Healthcare-related assistance
+* Personalized user interaction
+* Greeting and conversational responses
+* Artificial Intelligence information support
+* Machine Learning knowledge responses
+* Python and React-related assistance
+* Healthcare information responses
 * Current date and time retrieval
-* Basic calculator functionality
+* Built-in calculator functionality
 * Sentiment-aware responses
 * Conversation statistics tracking
-* Help menu for available commands
+* Help menu for user guidance
 * Interactive command-line interface
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
 * Python 3
 * Datetime Module
 * Conditional Statements
 * Pattern Matching
-* Rule-Based NLP Concepts
+* Rule-Based Natural Language Processing
+* Command Line Interface (CLI)
 
 ---
 
@@ -41,27 +44,27 @@ This project was developed as part of the **Artificial Intelligence Internship P
 Task1-Rule-Based-Chatbot/
 │
 ├── chatbot.py
-├── README.md
-└── screenshots/
+├── chatbot.mp4
+└── README.md
 ```
 
 ---
 
-## 💻 How to Run
+## 🚀 How to Run
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Task1-Rule-Based-Chatbot.git
+git clone https://github.com/sreeja0811-cell/Task1-Rule-Based-Chatbot.git
 ```
 
-### Navigate to Project Folder
+### Navigate to Project Directory
 
 ```bash
 cd Task1-Rule-Based-Chatbot
 ```
 
-### Run Application
+### Run the Application
 
 ```bash
 python3 chatbot.py
@@ -73,6 +76,8 @@ python3 chatbot.py
 
 ```text
 hello
+hi
+hey
 what is ai
 what is machine learning
 what is python
@@ -83,8 +88,32 @@ time
 calc 25+10
 stats
 thanks
+help
 bye
 ```
+
+---
+
+## 🎥 Demo Video
+
+A demonstration of the chatbot application is available in this repository.
+
+Video File:
+
+```text
+chatbot.mp4
+```
+
+The demo showcases:
+
+* Personalized user interaction
+* AI and Machine Learning query handling
+* Healthcare-related assistance
+* Date and time services
+* Calculator functionality
+* Sentiment-based responses
+* Conversation statistics tracking
+* Rule-based NLP implementation
 
 ---
 
@@ -101,11 +130,15 @@ Sreeja: what is ai
 
 Sreeja: healthcare
 
-🤖 AI helps healthcare professionals improve diagnosis, decision support, and patient care.
+🤖 AI helps healthcare professionals improve diagnosis, decision support and patient care.
 
 Sreeja: calc 25+10
 
 🤖 Result = 35
+
+Sreeja: stats
+
+🤖 Total Questions Asked: 4
 
 Sreeja: bye
 
@@ -116,14 +149,26 @@ Sreeja: bye
 
 ## 🎯 Learning Outcomes
 
-Through this project, I gained hands-on experience in:
+Through this project, I gained practical experience in:
 
+* Python Programming
 * Rule-Based Chatbot Development
 * Pattern Matching Techniques
-* Basic Natural Language Processing Concepts
-* Python Programming
+* Natural Language Processing Fundamentals
 * User Interaction Design
 * Conversation Flow Management
+* Problem Solving using Conditional Logic
+
+---
+
+## 🔮 Future Enhancements
+
+* Voice-enabled chatbot support
+* Integration with Generative AI models
+* GUI-based chatbot interface
+* Database integration for chat history
+* Multi-language support
+* Advanced intent recognition
 
 ---
 
@@ -133,7 +178,4 @@ Through this project, I gained hands-on experience in:
 
 Artificial Intelligence Intern – MyDailyWork
 
-GitHub: (https://github.com/sreeja0811-cell/Task1-Rule-Based-Chatbot)
-
-
-This README looks professional enough for GitHub, LinkedIn, and internship submission.
+GitHub: https://github.com/sreeja0811-cell
