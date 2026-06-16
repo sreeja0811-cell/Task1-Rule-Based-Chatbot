@@ -133,6 +133,7 @@ Through this project, I gained hands-on experience in:
 
 Artificial Intelligence Intern – MyDailyWork
 
-GitHub: [https://github.com/sreeja0811-cell](https://github.com/sreeja0811-cell)
+GitHub: (https://github.com/sreeja0811-cell/Task1-Rule-Based-Chatbot)
+
 
 This README looks professional enough for GitHub, LinkedIn, and internship submission.
